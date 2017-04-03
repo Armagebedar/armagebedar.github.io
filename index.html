@@ -23,9 +23,22 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="mailto:contact@craft-consultants.com">
-			<!--	<input type="email" name="email" id="email" placeholder="Email Address" /> -->
-				<input type="submit" value="Contact Us" />
+			<form id="signup-form" method="post" action="https://formspree.io/contact@craft-consultants.com">
+			
+                                    <div class="field half first">
+                                        <input type="text" name="name" id="name" placeholder="Name">
+                                    </div>
+                                    <div class="field half">
+                                        <input type="email" name="email" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="field">
+                                        <div class="textarea-wrapper"><textarea name="message" id="message" placeholder="Message" rows="1" style="overflow-x: hidden; overflow-y: auto; resize: none; height: 59px; max-height: 10em;"></textarea></div>
+                                    </div>
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Send" class="special"></li>
+                                    </ul>
+                              
+				
 			</form>
 
 		<!-- Footer -->
