@@ -1034,7 +1034,8 @@
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
+				height: 2.75em;
+				line-height: 2.75em;
 			}
 
 		}
