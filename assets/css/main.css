@@ -987,7 +987,7 @@
 		background-color: #e8e24a;
 		border-radius: 6px;
 		border: 0;
-		color: #ffffff !important;
+		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
@@ -1034,7 +1034,7 @@
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
+				padding: 1px;
 			}
 
 		}
