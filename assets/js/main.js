@@ -104,6 +104,28 @@
 
 		})();
 
+var $contactForm = $('#contact-form');
+$contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/contact@craft-consultants.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$contactForm.append('<span class="message">Sending message…</div>');
+		},
+		success: function(data) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<span class="message">Message sent!</div>');
+		},
+		error: function(err) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<span class="message">Oops, there was an error.</div>');
+		}
+	});
+});
+
 	// Signup Form.
 		(function() {
 
